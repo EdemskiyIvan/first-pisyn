@@ -1,57 +1,95 @@
-<div class="mx-auto">
-  <header class="flex justify-between px-6 py-6">
-    <div>
-      <img
-        class="h-6"
-        src="https://www.wealthsimple.com/static/ws-wordmark-refresh-aefa986e4074a84f853576304d0c9763.svg"
-      />
-    </div>
+---
+import Layout from "../layouts/Layout.astro";
+---
 
-    <div class="flex gap-8">
-      <div class="rounded-full border border-gray-500 px-2 py-1">login</div>
-      <div
-        class="rounded-full border border-gray-500 bg-slate-500 px-2 py-1 text-white"
-      >
-        Get started
+<Layout title="home">
+  <div class="mx-auto">
+    <header class="flex justify-between px-6 py-6">
+      <div>
+        <img
+          class="h-6"
+          src="https://www.wealthsimple.com/static/ws-wordmark-refresh-aefa986e4074a84f853576304d0c9763.svg"
+        />
       </div>
-    </div>
-  </header>
-  <main class="mx-auto max-w-7xl">
-    <div class="flex items-center justify-between gap-16">
-      <div class="flex flex-col gap-8">
-        <div class="flex flex-col gap-4">
-          <div class="max-w-[390px] text-6xl font-medium">
-            Buy, sell, and earn crypto
-          </div>
-          <div class="max-w-[360px]">
-            Trade and stake coins with confidence on Canada's first regulated
-            crypto platform.
-          </div>
-        </div>
 
-        <button class="w-fit rounded-full bg-zinc-900 px-4 py-2 text-white"
-          >Get started</button
+      <div class="flex gap-2">
+        <div class="rounded-full border border-gray-500 px-5 py-[10px]">
+          Login
+        </div>
+        <div
+          class="rounded-full border border-gray-500 bg-zinc-800 px-5 py-[10px] text-white"
+        >
+          Get started
+        </div>
+      </div>
+    </header>
+    <main class="mx-auto flex max-w-7xl flex-col gap-40">
+      <div class="flex items-center justify-between gap-16">
+        <div class="flex flex-col gap-8">
+          <div class="flex flex-col gap-4">
+            <div class="max-w-[390px] text-6xl font-medium">
+              Buy, sell, and earn crypto
+            </div>
+            <div class="max-w-[400px] leading-6 text-zinc-700">
+              Trade and stake coins with confidence on Canada's first regulated
+              crypto platform.
+            </div>
+          </div>
+
+          <button class="w-fit rounded-full bg-zinc-800 px-6 py-4 text-white"
+            >Get started</button
+          >
+        </div>
+        <video
+          class="h-[660px] rounded-2xl"
+          autoplay=""
+          poster="https://images.ctfassets.net/v44fuld738we/5bZC38cCy0aA5NEDHK0zG5/048d78f10ac8c992f27c6748269c6ab4/Crypto-Hero-Fallback.png?w=2000&h=2000&q=92&fm=png&bg=transparent"
+          muted=""
+          loop=""
+          preload="auto"
+          disableremoteplayback=""
+          playsinline=""
+          aria-label="video"
+          aria-describedby="desc-fb8a88c114ae2475a79634b64f443f7bCrypto-Herowebm"
+          ><source
+            type="video/webm"
+            src="//videos.ctfassets.net/v44fuld738we/5udl0cGbdvwZO6qvHRgmYE/fb8a88c114ae2475a79634b64f443f7b/Crypto-Hero.webm"
+          /><source
+            type="video/mp4"
+            src="//videos.ctfassets.net/v44fuld738we/5OPsrkq8lKo1iIjyH4Wmk3/315109cb6c2be622e02141a01c4a077a/Crypto-Hero-2.mp4"
+          /><track kind="captions" src="" /></video
         >
       </div>
-      <video
-        class="h-[660px] rounded-2xl"
-        autoplay=""
-        poster="https://images.ctfassets.net/v44fuld738we/5bZC38cCy0aA5NEDHK0zG5/048d78f10ac8c992f27c6748269c6ab4/Crypto-Hero-Fallback.png?w=2000&h=2000&q=92&fm=png&bg=transparent"
-        muted=""
-        loop=""
-        preload="auto"
-        disableremoteplayback=""
-        playsinline=""
-        aria-label="video"
-        aria-describedby="desc-fb8a88c114ae2475a79634b64f443f7bCrypto-Herowebm"
-        ><source
-          type="video/webm"
-          src="//videos.ctfassets.net/v44fuld738we/5udl0cGbdvwZO6qvHRgmYE/fb8a88c114ae2475a79634b64f443f7b/Crypto-Hero.webm"
-        /><source
-          type="video/mp4"
-          src="//videos.ctfassets.net/v44fuld738we/5OPsrkq8lKo1iIjyH4Wmk3/315109cb6c2be622e02141a01c4a077a/Crypto-Hero-2.mp4"
-        /><track kind="captions" src="" /></video
-      >
-    </div>
-  </main>
-</div>
+      <div class="flex flex-col items-center">
+        <div class="max-w-[800px] text-center text-6xl font-medium">
+          Trade Bitcoin, Ethereum, Solana and 60+ other coins.
+        </div>
+        <div>
+          <video
+            class="h-[660px]"
+            style=""
+            aria-hidden="false"
+            autoplay=""
+            poster="https://images.ctfassets.net/v44fuld738we/GIn2k9yFQthEig5oDHxtw/8017608c16f2b3ef8d33ca2b65aa6369/crypto-hero-b.png?w=1600&h=1000&q=92&fm=png&bg=transparent"
+            muted=""
+            loop=""
+            preload="auto"
+            disableremoteplayback=""
+            playsinline=""
+            aria-label="video"
+            aria-describedby="desc-19dd4c457b03e7d077f2dc6ecbd0aeb7crypto-hero-bmp4"
+            ><source
+              type='video/mp4; codecs="hvc1"'
+              data-src="//videos.ctfassets.net/v44fuld738we/7sTRzeWvhDIUPiO7zDZuaw/19dd4c457b03e7d077f2dc6ecbd0aeb7/crypto-hero-b.mp4"
+              src="//videos.ctfassets.net/v44fuld738we/7sTRzeWvhDIUPiO7zDZuaw/19dd4c457b03e7d077f2dc6ecbd0aeb7/crypto-hero-b.mp4"
+            /><source
+              type="video/webm"
+              data-src="//videos.ctfassets.net/v44fuld738we/7esCX6t8nZZ9B6vbaUhWBc/16cc9fa3cce5a355c5bfaf0b7085b92e/crypto-hero-b.webm"
+              src="//videos.ctfassets.net/v44fuld738we/7esCX6t8nZZ9B6vbaUhWBc/16cc9fa3cce5a355c5bfaf0b7085b92e/crypto-hero-b.webm"
+            /><track kind="captions" src="" /></video
+          >
+        </div>
+      </div>
+    </main>
+  </div>
+</Layout>

@@ -27,16 +27,17 @@ import Layout from "../layouts/Layout.astro";
       <div class="flex items-center justify-between gap-16">
         <div class="flex flex-col gap-8">
           <div class="flex flex-col gap-4">
-            <div class="max-w-[390px] text-6xl font-medium">
+            <h1 class="max-w-[390px] text-6xl font-medium">
               Buy, sell, and earn crypto
-            </div>
+            </h1>
             <div class="max-w-[400px] leading-6 text-zinc-700">
               Trade and stake coins with confidence on Canada's first regulated
               crypto platform.
             </div>
           </div>
 
-          <button class="w-fit rounded-full bg-zinc-800 px-6 py-4 text-white"
+          <button
+            class="duration-00 w-fit rounded-full bg-zinc-800 px-6 py-4 text-white transition hover:bg-zinc-600"
             >Get started</button
           >
         </div>
@@ -61,9 +62,9 @@ import Layout from "../layouts/Layout.astro";
         >
       </div>
       <div class="flex flex-col items-center">
-        <div class="max-w-[800px] text-center text-6xl font-medium">
+        <h2 class="max-w-[800px] text-center text-6xl font-medium">
           Trade Bitcoin, Ethereum, Solana and 60+ other coins.
-        </div>
+        </h2>
         <div>
           <video
             class="h-[660px]"
@@ -90,27 +91,60 @@ import Layout from "../layouts/Layout.astro";
           >
         </div>
       </div>
-      <div class="flex justify-between gap-4 px-6 py-10">
-        <div class="h-[700px] w-[500px] rounded-2xl bg-zinc-100">
-          <div class="ml-12 mt-12 flex max-w-[300px] text-5xl font-medium">
-            Start trading instantly
-          </div>
-          <div class="ml-12 max-w-[380px] text-xl">
+      <div class="grid grid-cols-5 gap-6">
+        <div
+          class="col-span-2 flex flex-col gap-6 rounded-2xl bg-zinc-100 p-12"
+        >
+          <h3 class="flex text-5xl font-medium">Start trading instantly</h3>
+          <p class="text-xl">
             Sign up and get started in minutes — there's no need to wait for
             funding. Core clients can instantly deposit up to $50,000, and
             Premium and Generation clients up to $250,000. And with no account
             minimums, you can buy, sell, and earn crypto at your own pace.
-          </div>
+          </p>
         </div>
-        <div class="h-[700px] w-[700px] rounded-2xl bg-zinc-100">
-          <div class="ml-12 mt-12 flex text-5xl font-medium">
-            Stay on top of the market
-          </div>
-          <div class="ml-12 text-xl">
+        <div
+          class="col-span-3 flex flex-col gap-6 rounded-2xl bg-zinc-100 p-12"
+        >
+          <h3 class="flex text-5xl font-medium">Stay on top of the market</h3>
+          <p class="text-xl">
             Crypto news in the app gets you real time insights for select coins.
             And with price alerts, you can make trading decisions quickly —
             without being glued to your phone.
-          </div>
+          </p>
+        </div>
+
+        <div
+          class="col-span-5 flex flex-col items-center gap-6 rounded-2xl bg-zinc-100 p-12 text-center"
+        >
+          <h3 class="flex text-5xl font-medium">
+            Stake and earn up to 12% per year
+          </h3>
+          <p class="text-xl">
+            Earn rewards on your crypto. Stake your coins in just a couple taps,
+            and the rewards are automatically deposited in your account. Rewards
+            vary by crypto tokens. Learn more.
+          </p>
+        </div>
+
+        <div
+          class="col-span-3 flex flex-col gap-6 rounded-2xl bg-zinc-100 p-12"
+        >
+          <h3 class="flex text-5xl font-medium">Send and receive with ease</h3>
+          <p class="text-xl">
+            Transfers let you move your crypto to or from Wealthsimple in just a
+            few taps.
+          </p>
+        </div>
+        <div
+          class="col-span-2 flex flex-col gap-6 rounded-2xl bg-zinc-100 p-12"
+        >
+          <h3 class="flex text-5xl font-medium">Trade on your terms</h3>
+          <p class="text-xl">
+            Automatically buy any amount of your favourite coins on a schedule.
+            If you have a target price to buy/sell at, we'll execute the order
+            if the coin hits that price.
+          </p>
         </div>
       </div>
     </main>

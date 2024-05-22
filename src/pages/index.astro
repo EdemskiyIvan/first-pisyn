@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Heading from "../components/heading.astro";
 ---
 
 <Layout title="home">
@@ -93,15 +94,22 @@ import Layout from "../layouts/Layout.astro";
       </div>
       <div class="grid grid-cols-5 gap-6">
         <div
-          class="col-span-2 flex flex-col gap-6 rounded-2xl bg-zinc-100 p-12"
+          class="relative col-span-2 overflow-hidden rounded-2xl bg-zinc-100 p-12"
         >
-          <h3 class="flex text-5xl font-medium">Start trading instantly</h3>
-          <p class="text-xl">
-            Sign up and get started in minutes — there's no need to wait for
-            funding. Core clients can instantly deposit up to $50,000, and
-            Premium and Generation clients up to $250,000. And with no account
-            minimums, you can buy, sell, and earn crypto at your own pace.
-          </p>
+          <div class="relative z-10 flex flex-col gap-6">
+            <h3 class="text-5xl font-medium">Start trading instantly</h3>
+            <p class="text-xl">
+              Sign up and get started in minutes — there's no need to wait for
+              funding. Core clients can instantly deposit up to $50,000, and
+              Premium and Generation clients up to $250,000. And with no account
+              minimums, you can buy, sell, and earn crypto at your own pace.
+            </p>
+          </div>
+          <img
+            class="absolute -bottom-56 -right-56"
+            src="https://www.wealthsimple.com/static/539886035f848f88ecbd6f18b7138cdf/7ca9f/Instant-Deposits-Coins.png"
+          />
+          <div class="h-56"></div>
         </div>
         <div
           class="col-span-3 flex flex-col gap-6 rounded-2xl bg-zinc-100 p-12"
@@ -272,7 +280,7 @@ import Layout from "../layouts/Layout.astro";
         </div>
       </div>
 
-      <div class="flex flex-col gap-10 rounded-2xl bg-[#E4E9D3] p-16">
+      <div class="relative flex flex-col gap-10 rounded-2xl bg-[#E4E9D3] p-16">
         <div class="flex flex-col gap-6">
           <div class="w-fit rounded-full bg-[#F5FAE7] px-5 py-2 font-light">
             WITH OUR PARTNER
@@ -291,6 +299,27 @@ import Layout from "../layouts/Layout.astro";
         >
           More on mortgages
         </button>
+        <video
+          class="absolute bottom-0 right-0 w-[540px]"
+          aria-hidden="false"
+          autoplay=""
+          muted=""
+          loop=""
+          preload="auto"
+          disableremoteplayback=""
+          playsinline=""
+          aria-label="video"
+          aria-describedby="desc-f5a889dc2fab735c51958e04e5e6df38mortgages-limitless-h265-en-CAmp4"
+          ><source
+            type='video/mp4; codecs="hvc1"'
+            data-src="//videos.ctfassets.net/v44fuld738we/0VnfEvRwg5p0HDMuMGMrV/f5a889dc2fab735c51958e04e5e6df38/mortgages-limitless-h265-en-CA.mp4"
+            src="//videos.ctfassets.net/v44fuld738we/0VnfEvRwg5p0HDMuMGMrV/f5a889dc2fab735c51958e04e5e6df38/mortgages-limitless-h265-en-CA.mp4"
+          /><source
+            type="video/webm"
+            data-src="//videos.ctfassets.net/v44fuld738we/6W8vMX0Bm3FVmJHrYbvwpH/b161d6d5eb144c3358d4617276d1996f/mortgages-limitless-en-CA.webm"
+            src="//videos.ctfassets.net/v44fuld738we/6W8vMX0Bm3FVmJHrYbvwpH/b161d6d5eb144c3358d4617276d1996f/mortgages-limitless-en-CA.webm"
+          /><track kind="captions" src="" /></video
+        >
       </div>
 
       <div class="flex flex-col items-center gap-12">

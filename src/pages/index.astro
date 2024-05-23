@@ -112,7 +112,7 @@ import Heading from "../components/heading.astro";
           <div class="h-56"></div>
         </div>
         <div
-          class="col-span-3 flex flex-col gap-6 rounded-2xl bg-zinc-100 p-12"
+          class="relative col-span-3 flex flex-col gap-6 rounded-2xl bg-zinc-100 p-12"
         >
           <h3 class="flex text-5xl font-medium">Stay on top of the market</h3>
           <p class="text-xl">
@@ -120,24 +120,51 @@ import Heading from "../components/heading.astro";
             And with price alerts, you can make trading decisions quickly —
             without being glued to your phone.
           </p>
+          <img class="absolute bottom-12 right-12 w-96" src="/eth.png" />
         </div>
 
         <div
-          class="col-span-5 flex flex-col items-center gap-6 rounded-2xl bg-zinc-100 p-12 text-center"
+          class="relative col-span-5 rounded-2xl bg-zinc-100 p-12 text-center"
         >
-          <p
-            class="rounded-md bg-[#EFDDF0] px-2 py-0.5 font-medium text-[#804B83]"
+          <div class="relative z-10 flex flex-col items-center gap-6 px-32">
+            <p
+              class="rounded-md bg-[#EFDDF0] px-2 py-0.5 font-medium text-[#804B83]"
+            >
+              Available for Ethereum, Solana, Cardano & Polkadot
+            </p>
+            <h3 class="max-w-lg text-balance text-5xl font-medium">
+              Stake and earn up to 12% per year
+            </h3>
+            <p class="text-xl">
+              Earn rewards on your crypto. Stake your coins in just a couple
+              taps, and the rewards are automatically deposited in your account.
+              Rewards vary by crypto tokens. Learn more.
+            </p>
+          </div>
+          <video
+            class="absolute bottom-0"
+            style=""
+            aria-hidden=""
+            autoplay=""
+            poster="https://images.ctfassets.net/v44fuld738we/Yw7f4oHn590HxHmTyuW2e/218d074da5a40a06832d4756b4950b2b/refreshCryptoStaking-en-CA.png?w=1200&h=675&q=92&fm=png&bg=transparent"
+            muted=""
+            loop=""
+            preload="auto"
+            disableremoteplayback=""
+            playsinline=""
+            aria-label="video"
+            aria-describedby="desc-607cf9a73365d2fc9522551c9d1699efrefreshCryptoStaking-h265-en-CAmp4"
+            ><source
+              type='video/mp4; codecs="hvc1"'
+              data-src="//videos.ctfassets.net/v44fuld738we/JXaRquSomudod074MSG3a/607cf9a73365d2fc9522551c9d1699ef/refreshCryptoStaking-h265-en-CA.mp4"
+              src="//videos.ctfassets.net/v44fuld738we/JXaRquSomudod074MSG3a/607cf9a73365d2fc9522551c9d1699ef/refreshCryptoStaking-h265-en-CA.mp4"
+            /><source
+              type="video/webm"
+              data-src="//videos.ctfassets.net/v44fuld738we/20KAHI4bHV0S7Nkr0oNAgD/22850d31b3db49d8900d57aac8d6aa28/refreshCryptoStaking-en-CA.webm"
+              src="//videos.ctfassets.net/v44fuld738we/20KAHI4bHV0S7Nkr0oNAgD/22850d31b3db49d8900d57aac8d6aa28/refreshCryptoStaking-en-CA.webm"
+            /><track kind="captions" src="" /></video
           >
-            Available for Ethereum, Solana, Cardano & Polkadot
-          </p>
-          <h3 class="flex max-w-xl text-5xl font-medium">
-            Stake and earn up to 12% per year
-          </h3>
-          <p class="text-xl">
-            Earn rewards on your crypto. Stake your coins in just a couple taps,
-            and the rewards are automatically deposited in your account. Rewards
-            vary by crypto tokens. Learn more.
-          </p>
+          <div class="h-[400px]"></div>
         </div>
 
         <div

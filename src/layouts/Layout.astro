@@ -21,4 +21,8 @@ const { title } = Astro.props;
     <slot />
   </body>
 </html>
-<style is:global></style>
+<style is:global>
+  body {
+    @apply selection:bg-indigo-300;
+  }
+</style>

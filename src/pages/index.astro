@@ -25,7 +25,9 @@ import Heading from "../components/heading.astro";
       </div>
     </header>
     <main class="mx-auto flex max-w-7xl flex-col gap-40">
-      <div class="flex items-center justify-between gap-16">
+      <div
+        class="flex flex-col items-center justify-between gap-16 lg:flex-row"
+      >
         <div class="flex flex-col gap-8">
           <div class="flex flex-col gap-4">
             <h1 class="max-w-[390px] text-6xl font-medium">
@@ -92,9 +94,9 @@ import Heading from "../components/heading.astro";
           >
         </div>
       </div>
-      <div class="grid grid-cols-5 gap-6">
+      <div class="grid grid-cols-1 gap-6 lg:grid-cols-5">
         <div
-          class="relative col-span-2 overflow-hidden rounded-2xl bg-zinc-100 p-12"
+          class="relative overflow-hidden rounded-2xl bg-zinc-100 p-12 lg:col-span-2"
         >
           <div class="relative z-10 flex flex-col gap-6">
             <h3 class="text-5xl font-medium">Start trading instantly</h3>
@@ -112,7 +114,7 @@ import Heading from "../components/heading.astro";
           <div class="h-56"></div>
         </div>
         <div
-          class="relative col-span-3 flex flex-col gap-6 rounded-2xl bg-zinc-100 p-12"
+          class="relative flex flex-col gap-6 rounded-2xl bg-zinc-100 p-12 lg:col-span-3"
         >
           <h3 class="flex text-5xl font-medium">Stay on top of the market</h3>
           <p class="text-xl">
@@ -124,7 +126,7 @@ import Heading from "../components/heading.astro";
         </div>
 
         <div
-          class="relative col-span-5 rounded-2xl bg-zinc-100 p-12 text-center"
+          class="relative rounded-2xl bg-zinc-100 p-12 text-center lg:col-span-5"
         >
           <div class="relative z-10 flex flex-col items-center gap-6 px-32">
             <p
@@ -168,7 +170,7 @@ import Heading from "../components/heading.astro";
         </div>
 
         <div
-          class="relative col-span-3 flex flex-col gap-6 overflow-hidden rounded-2xl bg-zinc-100 p-12"
+          class="relative flex flex-col gap-6 overflow-hidden rounded-2xl bg-zinc-100 p-12 lg:col-span-3"
         >
           <h3 class="flex text-5xl font-medium">Send and receive with ease</h3>
           <p class="text-xl">
@@ -201,7 +203,7 @@ import Heading from "../components/heading.astro";
           >
         </div>
         <div
-          class="col-span-2 flex flex-col gap-6 rounded-2xl bg-zinc-100 p-12"
+          class="flex flex-col gap-6 rounded-2xl bg-zinc-100 p-12 lg:col-span-2"
         >
           <h3 class="flex text-5xl font-medium">Trade on your terms</h3>
           <p class="text-xl">

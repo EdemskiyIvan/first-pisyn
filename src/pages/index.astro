@@ -24,7 +24,7 @@ import Heading from "../components/heading.astro";
         </div>
       </div>
     </header>
-    <main class="mx-auto flex max-w-7xl flex-col gap-40">
+    <main class="mx-auto flex max-w-7xl flex-col gap-40 pb-40">
       <div
         class="flex flex-col items-center justify-between gap-16 lg:flex-row"
       >
@@ -64,6 +64,7 @@ import Heading from "../components/heading.astro";
           /><track kind="captions" src="" /></video
         >
       </div>
+
       <div class="flex flex-col items-center">
         <h2 class="max-w-[800px] text-center text-6xl font-medium">
           Trade Bitcoin, Ethereum, Solana and 60+ other coins.
@@ -94,6 +95,7 @@ import Heading from "../components/heading.astro";
           >
         </div>
       </div>
+
       <div class="grid grid-cols-1 gap-6 lg:grid-cols-5">
         <div
           class="relative overflow-hidden rounded-2xl bg-zinc-100 p-12 lg:col-span-2"
@@ -144,7 +146,7 @@ import Heading from "../components/heading.astro";
             </p>
           </div>
           <video
-            class="absolute bottom-0"
+            class="absolute bottom-0 left-0 w-full"
             style=""
             aria-hidden=""
             autoplay=""
@@ -152,7 +154,6 @@ import Heading from "../components/heading.astro";
             muted=""
             loop=""
             preload="auto"
-            disableremoteplayback=""
             playsinline=""
             aria-label="video"
             aria-describedby="desc-607cf9a73365d2fc9522551c9d1699efrefreshCryptoStaking-h265-en-CAmp4"
@@ -276,7 +277,7 @@ import Heading from "../components/heading.astro";
           Save on fees as your wealth grows
         </h2>
 
-        <div class="grid h-96 grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 gap-6 lg:grid-cols-3">
           <div class="flex flex-col gap-4 rounded-2xl bg-zinc-100 p-8">
             <div class="text-[14px] font-light uppercase text-zinc-600">
               $1 in assets
@@ -386,8 +387,6 @@ import Heading from "../components/heading.astro";
           >Get started</button
         >
       </div>
-
-      <div></div>
     </main>
   </div>
 </Layout>
